@@ -1,0 +1,35 @@
+@import "./normalize";
+@import "./_mixins";
+@import "./_variables.scss";
+
+.app-container {
+    background: $cl-dark;
+    height: 100%;
+
+    @include tablet {
+        height: 100vh;
+    }
+} 
+
+.app-content {
+    height: 100%;
+    margin: 0 auto;
+    
+    @include desktop {
+        width: 1000px;
+    }
+}
+
+.btn-transparent {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: $fs-body;
+}
+

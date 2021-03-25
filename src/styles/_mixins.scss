@@ -1,0 +1,39 @@
+$mobile: 640px;
+$tablet: 768px;
+$desktop: 1024px;
+
+@mixin desktop() {
+    @media screen and (min-width: $desktop) {
+        @content;
+    }
+}
+
+@mixin tablet() {
+    @media screen and (min-width: $tablet) and (max-width: $desktop) {
+        @content;
+    }
+}
+
+@mixin mobile() {
+    @media screen and (min-width: $mobile) and (max-width: $tablet) {
+        @content;
+    }
+}
+
+@mixin triangleBlock {
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: '';
+        height: 0;
+        width: 0;
+        top: -10px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid $cl-white;
+    }
+}
+

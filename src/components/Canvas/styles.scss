@@ -1,0 +1,28 @@
+@import '../../styles/_main.scss';
+
+.c-canvas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 576px;
+    background: #2A2A2A;
+
+    
+    &__content {
+        position: relative;
+    }
+    
+    &__image {
+        height: 576px;
+    }
+    
+    @include tablet {
+        flex-grow: 1;
+        height: auto;
+
+        &__image {
+            height: auto;
+            width: 100%;
+        }
+    }
+}

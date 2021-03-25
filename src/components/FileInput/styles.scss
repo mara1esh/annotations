@@ -1,0 +1,45 @@
+@import '../../styles/_main.scss';
+
+.c-file-input {
+    padding-top: 24px;
+    padding-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+
+    &__filename {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 33px;
+        color: $cl-white;
+    }
+
+    &__label {
+        padding: 9px 24px;
+        background: #BEBEBE;
+        border-radius: 4px;
+        font-weight: 600;
+        line-height: 22px;
+        color: $cl-dark;
+        cursor: pointer;
+
+        &:hover {
+            color: $cl-white;
+            background-color: #909090;
+        }
+    }
+
+    @include tablet {
+        padding: 32px 32px 32px 40px;
+        
+        &__filename {
+            font-size: 32px;
+            line-height: 38px;
+        }
+
+        &__label {
+            padding: 11px 26px;
+            font-size: 24px;
+            line-height: 28px;
+        }
+    }
+}

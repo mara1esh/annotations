@@ -1,9 +1,14 @@
 import React from 'react';
+import Main from '@pages/Main';
 
-const App = () => (
-  <div className="container">
-    <h1>Hello World, React!</h1>
-  </div>
-);
+function App() {
+  return (
+    <div className="app-container">
+      <div className="app-content">
+        <Main />
+      </div>
+    </div>
+  );
+}
 
 export default App;

@@ -17,7 +17,7 @@ type CanvasProps = {
 
 function Canvas({
   fileImage,
-  annotations,
+  annotations = [],
   createDraft,
   postAnnotation,
   deleteAnnotation,

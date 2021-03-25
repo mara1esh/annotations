@@ -1,0 +1,32 @@
+@import '../../styles/_main.scss';
+
+.p-main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &__helper-text {
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        line-height: 19px;
+        color: #909090;
+        mix-blend-mode: normal;
+    
+        & > svg {
+            padding-left: 8px;
+            padding-right: 8px;
+        }   
+    }
+
+    @include tablet {
+
+        &__helper-text {
+            margin: 60px 0px;
+            font-size: 24px;
+            line-height: 30px;
+            justify-content: center;
+        }
+    }    
+}

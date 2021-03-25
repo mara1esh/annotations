@@ -50,8 +50,9 @@ function Canvas({
           className="c-canvas__image"
           src={fileImage.blob ?? PreloadImage}
         />
-        {annotations.map((i) => (
+        {annotations.map((i, idx) => (
           <AnnotationItem
+            idx={idx}
             handleClick={handleOpen}
             opened={opened === i.id}
             postAnnotation={postAnnotation}

@@ -23,7 +23,7 @@ export default function useAnnotations() {
       const draft: Annotation = {
         author: 'Valerii Shelihan',
         comment: null,
-        id: annotations.length + 1,
+        id: new Date().getTime(),
         pos,
       };
       setAnnotations([...annotations, draft]);

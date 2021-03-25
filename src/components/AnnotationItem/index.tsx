@@ -9,6 +9,7 @@ import './styles.scss';
 type AnnotationProps = {
   opened: boolean;
   data: Annotation;
+  idx: number;
   coords: AnnotationPos;
   postAnnotation: (id: number, comment: string) => void;
   deleteAnnotation: (id: number) => void;
@@ -19,6 +20,7 @@ function AnnotationItem({
   data,
   coords,
   opened,
+  idx,
   postAnnotation,
   deleteAnnotation,
   handleClick,
@@ -59,11 +61,11 @@ function AnnotationItem({
     >
       <div
         className={clsx('annotation-item__badge', {
-          'badge-big-index': data.id > 9,
+          'badge-big-index': (idx + 1) > 9,
         })}
         onClick={() => handleClick(data.id)}
       >
-        <span className="annotation-item__badge__text">{data.id}</span>
+        <span className="annotation-item__badge__text">{idx + 1}</span>
       </div>
       {opened && (
         <Popup

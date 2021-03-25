@@ -1,3 +1,12 @@
+# UPDATES
+Implementation is based on Flux pattern.
+
+**Make it running:**
+
+- Run `yarn`
+- Run `yarn server`
+- Run `yarn start`
+
 # Annotations experience
 
 This test task is about implementing a feature of leaving annotations on images, like on Figma or Invision, but much simpler.

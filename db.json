@@ -26,6 +26,33 @@
         "x": 0.1314,
         "y": 0.3719
       }
+    },
+    {
+      "author": "Valerii Shelihan",
+      "comment": "Here we go",
+      "id": 0.0374,
+      "pos": {
+        "x": 0.192,
+        "y": 0.1658
+      }
+    },
+    {
+      "author": "Valerii Shelihan",
+      "comment": "Hola",
+      "id": 0.8681,
+      "pos": {
+        "x": 0.8607,
+        "y": 0.1866
+      }
+    },
+    {
+      "author": "Valerii Shelihan",
+      "comment": "This test task is about implementing a feature of leaving annotations on images, like on Figma or Invision, but much simpler.",
+      "id": 0.4669,
+      "pos": {
+        "x": 0.1269,
+        "y": 0.4783
+      }
     }
   ]
 }

@@ -1,0 +1,116 @@
+@import '../../styles/_main.scss';
+
+.annotation-item {
+    position: absolute;
+
+    &__badge {
+        margin-bottom: 16px;
+        position: relative;
+        padding: 8px 13px;
+        background: #EF7058;
+        border-radius: 100%;
+        cursor: pointer;
+
+        &__text {
+            color: $cl-white;
+            font-weight: bold;
+            font-size: $fs-body2;
+            line-height: 16px;
+        }
+    }
+
+    .badge-big-index {
+        padding: 8px 10px;
+    }
+}
+
+.annotation-item-popup {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: max-content;
+    max-width: 365px;
+    background: #FFFFFF;
+    border: 1px solid #EFEFF0;
+    border-radius: 4px;
+    z-index: 3;
+}
+
+.annotation-item-popup-form {
+    @include triangleBlock();
+    padding: 24px 18px 28px 16px;
+
+    &__wrapper {
+        position: relative;
+        padding-bottom: 6px;
+
+        &::after {
+            position: absolute;
+            content: '';
+            bottom: 0;
+            left: 0;
+            height: 1px;
+            width: 100%;
+            background: #9398A2;
+        }
+    }
+
+    &__input {
+        border: none;
+        outline: none;
+
+        &::placeholder {
+            font-size: $fs-body2;
+            line-height: 20px;
+            color: #9398A2;
+        }
+    }
+}
+
+.annotation-item-popup-content {
+    @include triangleBlock();
+
+    display: flex;
+    padding: 12px;
+
+    &__btn-remove {
+        align-self: flex-start;
+        margin-left: 32px;
+    }
+
+    &__wrapper {
+        display: flex;
+
+        &__avatar {
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-self: flex-start;
+            font-weight: 600;
+            font-size: $fs-body2;
+            line-height: 16px;
+            background: $cl-pink;
+            border-radius: 100%;
+            color: #FDD5D5;
+        }
+    
+        &__box {
+            margin-left: 8px;
+            p {
+                margin: 0;
+                margin-bottom: 4px;
+                font-weight: bold;
+                font-size: $fs-body2;
+                line-height: 16px;
+                color: $cl-dark2;
+            }
+            span {
+                font-size: $fs-body2;
+                line-height: 18px;
+                color: $cl-dark2;
+            }
+        }
+    }
+}

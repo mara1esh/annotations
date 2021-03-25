@@ -53,7 +53,6 @@ export default function useAnnotations() {
 
   const deleteAnnotation = useCallback(
     async function (id: number) {
-      // TODO test removing with id 1
       if (annotations.find(i => i.id === id).comment) {
         await removeAnnotation(id);
       }

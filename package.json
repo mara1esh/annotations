@@ -32,12 +32,14 @@
   "dependencies": {
     "@react-hook/mouse-position": "^4.1.0",
     "@types/react-click-outside-hook": "^1.0.0",
+    "@types/react-responsive": "^8.0.2",
     "axios": "^0.21.1",
     "clsx": "^1.1.1",
     "css-loader": "^5.2.0",
     "file-loader": "^6.2.0",
     "prettier": "^2.2.1",
     "react-click-outside-hook": "^1.1.1",
+    "react-responsive": "^8.2.0",
     "react-svg-loader": "^3.0.3",
     "style-loader": "^2.0.0",
     "url-loader": "^4.1.1"
